@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #d3e8ee;
+}
+.body .main {
+  background-color: #d3e8ee;
+  font-family: "Lato", sans-serif;
+}
+.body .header {
+  background-color: #d3e8ee;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.body .header .nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+.body .header .nav .boton {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+  float: right;
+}
+.body .header .nav #check {
+  display: none;
+}
+.body .header .nav .link {
+  text-decoration: none;
+  color: black;
+}
+.body .header .nav .logo {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  line-height: 80px;
+  padding: 0 40px;
+}
+.body .header .nav .lista {
+  display: flex;
+  margin-right: 80px;
+  list-style: none;
+}
+.body .header .nav .lista .hijo {
+  font-family: "Lato", sans-serif;
+  margin: 0 12px;
+  line-height: 80px;
+  font-size: 18px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: #d3e8ee;
+    height: 60px;
+  }
+  .logo {
+    font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    line-height: 60px;
+    padding: 0 20px;
+  }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0 40px;
+    background-color: #9bbec0;
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    width: 100%;
+    padding: 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+  .hijo {
+    line-height: 70px;
+  }
+  .boton {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+}
+/*css pagina principal*/
+.sobremigrids {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fotosobremi presentacion";
+}
+
+.fotosobremi {
+  grid-area: fotosobremi;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion {
+  grid-area: presentacion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 777px) {
+  .sobremigrids {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fotosobremi" "presentacion";
+  }
+  .fotosobremi {
+    grid-area: fotosobremi;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .presentacion {
+    grid-area: presentacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+  }
+}
+.conunpc {
+  margin: 30px;
+  font-size: 25px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.conunpc:hover {
+  font-size: 40px;
+}
+
+/*css resenas inicio*/
+.res-in {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "respres fotopres";
+}
+
+.respres {
+  grid-area: respres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+}
+
+.fotopres {
+  grid-area: fotopres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resunpc {
+  margin: 30px;
+  font-size: 25px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.resunpc:hover {
+  font-size: 40px;
+}
+
+@media (max-width: 777px) {
+  .res-in {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fotopres" "respres";
+  }
+  .fotopres {
+    grid-area: fotopres;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .respres {
+    grid-area: respres;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+  }
+}
+/*css autores inicio*/
+.au-in {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fotoau aupres";
+}
+
+.fotoau {
+  grid-area: fotoau;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aupres {
+  grid-area: aupres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+}
+
+.aunpc {
+  margin: 30px;
+  font-size: 25px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.aunpc:hover {
+  font-size: 40px;
+}
+
+@media (max-width: 777px) {
+  .au-in {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fotoau" "aupres";
+  }
+  .fotoau {
+    grid-area: fotoau;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .aupres {
+    grid-area: aupres;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+  }
+}
+/*inicio css footer*/
+.footer {
+  background-color: #d3e8ee;
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.nombre {
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+.social {
+  font-family: "Lato", sans-serif;
+}
+
+.instagram {
+  text-decoration: none;
+  color: black;
+}
+
+.whatsapp {
+  text-decoration: none;
+  color: black;
+}
+
+.copy {
+  font-family: "Lato", sans-serif;
+}
+
+/*css resenas */
+.respagina {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "elpoder penelope susurro";
+  gap: 2rem;
+  background-color: #d3e8ee;
+}
+
+.elpoder {
+  font-family: "Lato", sans-serif;
+  grid-area: elpoder;
+  background-color: #a79b9a;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.podmarg {
+  margin-top: 50px;
+}
+
+.imgelpoder {
+  margin: 10px;
+}
+
+.penelope {
+  font-family: "Lato", sans-serif;
+  grid-area: penelope;
+  background-color: #928f9e;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.imgpenelope {
+  margin: 10px;
+}
+
+.penmarg {
+  margin: 50px;
+}
+
+.susurro {
+  font-family: "Lato", sans-serif;
+  grid-area: susurro;
+  background-color: #8f947e;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.imgsusurro {
+  margin: 10px;
+}
+
+.susmarg {
+  margin-top: 50px;
+}
+
+.ver {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.ver:hover {
+  font-size: 23px;
+  font-style: italic;
+}
+
+@media (max-width: 953px) {
+  .respagina {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "elpoder" "penelope" "susurro";
+  }
+}
+/*inicio css contacto*/
+.pagcontacto {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "wpcontacto" "ubicontacto" "instacontacto";
+  gap: 2rem;
+}
+
+.wpcontacto {
+  color: black;
+  background-color: #d3e8ee;
+  font-family: "Lato", sans-serif;
+  grid-area: wpcontacto;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsappcontacto {
+  text-decoration: none;
+  color: black;
+}
+
+.ubicontacto {
+  color: black;
+  background-color: #d3e8ee;
+  font-family: "Lato", sans-serif;
+  grid-area: ubicontacto;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubicacion {
+  text-decoration: none;
+  color: black;
+}
+
+.instacontacto {
+  color: black;
+  background-color: #d3e8ee;
+  font-family: "Lato", sans-serif;
+  grid-area: instacontacto;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagramcontacto {
+  text-decoration: none;
+  color: black;
+}
+
+/*fin css contacto*//*# sourceMappingURL=estilos.css.map */

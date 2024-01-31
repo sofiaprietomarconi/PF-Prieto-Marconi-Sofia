@@ -1,0 +1,85 @@
+
+.respagina { 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "elpoder penelope susurro";
+    gap: 2rem;
+    background-color: $backcolor ;
+
+    .elpoder {
+        font-family: $font;
+        grid-area: elpoder;
+       background-color:#a79b9a ; 
+       color: black;
+       margin-top: 45px;
+      text-align: center;
+
+      .podmarg {
+        margin-top: 50px;
+        }
+        .imgelpoder {
+            margin: 10px;
+        }
+
+    }
+
+}
+
+.penelope {
+    font-family: $font;
+    grid-area: penelope;
+    background-color:#928f9e ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    
+.penmarg{
+    margin: 50px;
+}
+.imgpenelope {
+    margin: 10px;
+}
+
+}
+
+
+.susurro {
+    font-family: $font;
+    grid-area: susurro;
+    background-color:#8f947e ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    .susmarg {
+        margin-top: 50px;
+    }
+    .imgsusurro {
+        margin: 10px;
+    }
+}
+
+.ver {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 0.3s ease-in-out;
+ }
+ 
+ .ver:hover {
+     font-size:23px;
+     font-style: italic;
+ }
+
+@media (max-width: 953px ) {
+    .respagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "elpoder"
+        "penelope"
+        "susurro";
+    }
+}

@@ -5,28 +5,32 @@
   box-sizing: border-box;
 }
 
-.body {
-  background-color: #d3e8ee;
-}
-.body .main {
-  background-color: #d3e8ee;
+.main {
+  background-color: #9bbec0;
   font-family: "Lato", sans-serif;
 }
-.body .header {
-  background-color: #d3e8ee;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #9bbec0;
   height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
 }
-.body .header .nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 992px;
-  margin: 0 auto;
+
+.body {
+  background-color: #9bbec0;
 }
-.body .header .nav .boton {
+
+.boton {
   background: none;
   border: none;
   font-size: 30px;
@@ -36,25 +40,29 @@
   cursor: pointer;
   float: right;
 }
-.body .header .nav #check {
+
+#check {
   display: none;
 }
-.body .header .nav .link {
-  text-decoration: none;
-  color: black;
-}
-.body .header .nav .logo {
+
+.logo {
   font-size: 30px;
   font-family: "Dancing Script", cursive;
   line-height: 80px;
   padding: 0 40px;
 }
-.body .header .nav .lista {
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.lista {
   display: flex;
   margin-right: 80px;
   list-style: none;
 }
-.body .header .nav .lista .hijo {
+.lista .hijo {
   font-family: "Lato", sans-serif;
   margin: 0 12px;
   line-height: 80px;
@@ -65,7 +73,7 @@
 
 @media (max-width: 768px) {
   .header {
-    background-color: #d3e8ee;
+    background-color: #9bbec0;
     height: 60px;
   }
   .logo {
@@ -87,7 +95,7 @@
     height: calc(100% - 60px);
     overflow-y: auto;
   }
-  .hijo {
+  .lista .hijo {
     line-height: 70px;
   }
   .boton {
@@ -97,7 +105,6 @@
     left: 0%;
   }
 }
-/*css pagina principal*/
 .sobremigrids {
   height: 100vh;
   display: grid;
@@ -105,20 +112,26 @@
   grid-template-rows: 1fr;
   grid-template-areas: "fotosobremi presentacion";
 }
-
-.fotosobremi {
+.sobremigrids .fotosobremi {
   grid-area: fotosobremi;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.presentacion {
+.sobremigrids .presentacion {
   grid-area: presentacion;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
+}
+.sobremigrids .presentacion .conunpc {
+  margin: 30px;
+  font-size: 25px;
+  transition: font-size 0.3s ease-in-out;
+}
+.sobremigrids .presentacion .conunpc:hover {
+  font-size: 40px;
 }
 
 @media (max-width: 777px) {
@@ -129,7 +142,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "fotosobremi" "presentacion";
   }
-  .fotosobremi {
+  .sobremigrids .fotosobremi {
     grid-area: fotosobremi;
     display: flex;
     flex-direction: column;
@@ -137,7 +150,7 @@
     align-items: center;
     margin-top: 70px;
   }
-  .presentacion {
+  .sobremigrids .presentacion {
     grid-area: presentacion;
     display: flex;
     flex-direction: column;
@@ -146,17 +159,6 @@
     font-family: "Lato", sans-serif;
   }
 }
-.conunpc {
-  margin: 30px;
-  font-size: 25px;
-  transition: font-size 0.3s ease-in-out;
-}
-
-.conunpc:hover {
-  font-size: 40px;
-}
-
-/*css resenas inicio*/
 .res-in {
   display: grid;
   height: 100vh;
@@ -164,8 +166,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "respres fotopres";
 }
-
-.respres {
+.res-in .respres {
   grid-area: respres;
   display: flex;
   justify-content: center;
@@ -173,22 +174,19 @@
   font-family: "Lato", sans-serif;
   margin: 10px;
 }
-
-.fotopres {
-  grid-area: fotopres;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resunpc {
+.res-in .respres .resunpc {
   margin: 30px;
   font-size: 25px;
   transition: font-size 0.3s ease-in-out;
 }
-
-.resunpc:hover {
+.res-in .respres .resunpc:hover {
   font-size: 40px;
+}
+.res-in .fotopres {
+  grid-area: fotopres;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 777px) {
@@ -199,14 +197,14 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "fotopres" "respres";
   }
-  .fotopres {
+  .res-in .fotopres {
     grid-area: fotopres;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .respres {
+  .res-in .respres {
     grid-area: respres;
     display: flex;
     flex-direction: column;
@@ -215,7 +213,6 @@
     font-family: "Lato", sans-serif;
   }
 }
-/*css autores inicio*/
 .au-in {
   display: grid;
   height: 100vh;
@@ -223,15 +220,13 @@
   grid-template-rows: 1fr;
   grid-template-areas: "fotoau aupres";
 }
-
-.fotoau {
+.au-in .fotoau {
   grid-area: fotoau;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.aupres {
+.au-in .aupres {
   grid-area: aupres;
   display: flex;
   justify-content: center;
@@ -239,14 +234,12 @@
   font-family: "Lato", sans-serif;
   margin: 10px;
 }
-
-.aunpc {
+.au-in .aupres .aunpc {
   margin: 30px;
   font-size: 25px;
   transition: font-size 0.3s ease-in-out;
 }
-
-.aunpc:hover {
+.au-in .aupres .aunpc:hover {
   font-size: 40px;
 }
 
@@ -258,13 +251,13 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "fotoau" "aupres";
   }
-  .fotoau {
+  .au-in .fotoau {
     grid-area: fotoau;
     display: flex;
     flex-direction: column;
     margin-top: 70px;
   }
-  .aupres {
+  .au-in .aupres {
     grid-area: aupres;
     display: flex;
     flex-direction: column;
@@ -273,39 +266,6 @@
     font-family: "Lato", sans-serif;
   }
 }
-/*inicio css footer*/
-.footer {
-  background-color: #d3e8ee;
-  color: black;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-}
-
-.nombre {
-  color: black;
-  font-family: "Dancing Script", cursive;
-}
-
-.social {
-  font-family: "Lato", sans-serif;
-}
-
-.instagram {
-  text-decoration: none;
-  color: black;
-}
-
-.whatsapp {
-  text-decoration: none;
-  color: black;
-}
-
-.copy {
-  font-family: "Lato", sans-serif;
-}
-
-/*css resenas */
 .respagina {
   display: grid;
   height: 100vh;
@@ -313,10 +273,9 @@
   grid-template-rows: 1fr;
   grid-template-areas: "elpoder penelope susurro";
   gap: 2rem;
-  background-color: #d3e8ee;
+  background-color: #9bbec0;
 }
-
-.elpoder {
+.respagina .elpoder {
   font-family: "Lato", sans-serif;
   grid-area: elpoder;
   background-color: #a79b9a;
@@ -324,12 +283,10 @@
   margin-top: 45px;
   text-align: center;
 }
-
-.podmarg {
+.respagina .elpoder .podmarg {
   margin-top: 50px;
 }
-
-.imgelpoder {
+.respagina .elpoder .imgelpoder {
   margin: 10px;
 }
 
@@ -341,13 +298,11 @@
   margin-top: 45px;
   text-align: center;
 }
-
-.imgpenelope {
-  margin: 10px;
-}
-
-.penmarg {
+.penelope .penmarg {
   margin: 50px;
+}
+.penelope .imgpenelope {
+  margin: 10px;
 }
 
 .susurro {
@@ -358,13 +313,11 @@
   margin-top: 45px;
   text-align: center;
 }
-
-.imgsusurro {
-  margin: 10px;
-}
-
-.susmarg {
+.susurro .susmarg {
   margin-top: 50px;
+}
+.susurro .imgsusurro {
+  margin: 10px;
 }
 
 .ver {
@@ -386,7 +339,6 @@
     grid-template-areas: "elpoder" "penelope" "susurro";
   }
 }
-/*inicio css contacto*/
 .pagcontacto {
   display: grid;
   height: 100vh;
@@ -395,10 +347,9 @@
   grid-template-areas: "wpcontacto" "ubicontacto" "instacontacto";
   gap: 2rem;
 }
-
-.wpcontacto {
+.pagcontacto .wpcontacto {
   color: black;
-  background-color: #d3e8ee;
+  background-color: #9bbec0;
   font-family: "Lato", sans-serif;
   grid-area: wpcontacto;
   margin: 10px;
@@ -407,15 +358,18 @@
   justify-content: center;
   align-items: center;
 }
-
-.whatsappcontacto {
+.pagcontacto .wpcontacto .whatsappcontacto {
   text-decoration: none;
   color: black;
+  transition: font-size 0, 3s ease-in-out;
+  font-size: 15px;
 }
-
-.ubicontacto {
+.pagcontacto .wpcontacto .whatsappcontacto:hover {
+  font-size: 18px;
+}
+.pagcontacto .ubicontacto {
   color: black;
-  background-color: #d3e8ee;
+  background-color: #9bbec0;
   font-family: "Lato", sans-serif;
   grid-area: ubicontacto;
   margin: 10px;
@@ -424,15 +378,18 @@
   justify-content: center;
   align-items: center;
 }
-
-.ubicacion {
+.pagcontacto .ubicontacto .ubicacion {
   text-decoration: none;
   color: black;
+  transition: font-size 0, 3s ease-in-out;
+  font-size: 15px;
 }
-
-.instacontacto {
+.pagcontacto .ubicontacto .ubicacion:hover {
+  font-size: 18px;
+}
+.pagcontacto .instacontacto {
   color: black;
-  background-color: #d3e8ee;
+  background-color: #9bbec0;
   font-family: "Lato", sans-serif;
   grid-area: instacontacto;
   margin: 10px;
@@ -441,10 +398,38 @@
   justify-content: center;
   align-items: center;
 }
+.pagcontacto .instacontacto .instagramcontacto {
+  text-decoration: none;
+  color: black;
+  transition: font-size 0, 3s ease-in-out;
+  font-size: 15px;
+}
+.pagcontacto .instacontacto .instagramcontacto:hover {
+  font-size: 18px;
+}
 
-.instagramcontacto {
+.footer {
+  background-color: #9bbec0;
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+.footer .nombre {
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+.footer .social {
+  font-family: "Lato", sans-serif;
+}
+.footer .social .instagram {
   text-decoration: none;
   color: black;
 }
-
-/*fin css contacto*//*# sourceMappingURL=estilos.css.map */
+.footer .social .whatsapp {
+  text-decoration: none;
+  color: black;
+}
+.footer .copy {
+  font-family: "Lato", sans-serif;
+}/*# sourceMappingURL=estilos.css.map */

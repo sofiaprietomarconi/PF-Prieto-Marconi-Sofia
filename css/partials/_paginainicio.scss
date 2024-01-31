@@ -1,0 +1,186 @@
+.sobremigrids{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "fotosobremi presentacion";
+    .fotosobremi {
+        grid-area: fotosobremi;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentacion{
+        grid-area: presentacion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        .conunpc {
+            margin: 30px;
+            font-size: 25px;
+            transition: font-size 0.3s ease-in-out;
+         }
+         
+         .conunpc:hover {
+             font-size:40px;
+         }
+    }
+}
+
+@media (max-width: 777px) {
+    .sobremigrids{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "fotosobremi" 
+            "presentacion";
+            .fotosobremi {
+                grid-area: fotosobremi;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 70px;
+            }
+            
+            .presentacion{
+                grid-area: presentacion;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $font;
+            }
+    }
+    }
+
+.res-in{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "respres fotopres" ;
+
+    .respres {
+        grid-area: respres;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        margin:10px;
+
+        .resunpc {
+            margin: 30px;
+            font-size: 25px;
+            transition: font-size 0.3s ease-in-out;
+         }
+         
+         .resunpc:hover {
+             font-size:40px;
+         }
+    }
+    
+    .fotopres {
+        grid-area: fotopres;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+    @media (max-width: 777px) {
+        .res-in{
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "fotopres" 
+                "respres";
+
+                .fotopres {
+                    grid-area: fotopres;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .respres{
+                    grid-area: respres;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $font;
+                }
+        }
+        }
+
+ .au-in{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "fotoau aupres" ;
+    .fotoau {
+        grid-area: fotoau;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aupres {
+        grid-area: aupres;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        margin:10px;
+        .aunpc {
+            margin: 30px;
+            font-size: 25px;
+            transition: font-size 0.3s ease-in-out;
+         }
+         
+         .aunpc:hover {
+             font-size:40px;
+         }
+        
+    }
+}
+
+ @media (max-width: 777px) {
+    .au-in{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "fotoau" 
+            "aupres";
+            .fotoau {
+                grid-area: fotoau;
+                display: flex;
+                flex-direction: column;
+               margin-top: 70px;
+            }
+            
+            .aupres{
+                grid-area: aupres;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $font;
+            }
+    }
+    
+    }

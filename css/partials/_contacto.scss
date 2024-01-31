@@ -1,0 +1,80 @@
+
+.pagcontacto {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "wpcontacto"
+    "ubicontacto"
+    "instacontacto";
+    gap: 2rem;
+
+    .wpcontacto { 
+        color: black;
+        background-color: $backcolor ;
+        font-family: $font;
+        grid-area: wpcontacto;
+        margin:10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .whatsappcontacto{
+            text-decoration: none;
+            color: black;
+            transition: font-size 0,3s ease-in-out;
+            font-size: 15px;
+        }
+        .whatsappcontacto:hover{
+            font-size: 18px;
+        }
+
+     
+        }
+    
+    .ubicontacto {
+        color: black;
+        background-color: $backcolor ;
+        font-family:$font;
+        grid-area: ubicontacto;
+       margin:10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ubicacion{
+            text-decoration: none;
+            color: black;
+            transition: font-size 0,3s ease-in-out;
+            font-size: 15px;
+        }
+        .ubicacion:hover{
+            font-size: 18px;
+        }
+
+    }
+    
+    .instacontacto {
+        color: black;
+        background-color: $backcolor ;
+        font-family: $font;
+        grid-area: instacontacto;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .instagramcontacto{
+            text-decoration: none;
+            color: black;
+            transition: font-size 0,3s ease-in-out;
+            font-size: 15px;
+        }
+        .instagramcontacto:hover{
+            font-size: 18px;
+        }
+
+        }
+    }

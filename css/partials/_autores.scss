@@ -1,0 +1,99 @@
+
+.autores-pagina { 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cristina-bajo gabriela-exilart"
+    "carlos-ruiz vanesa-montfort";
+    gap: 2rem;
+    background-color: $backcolor ;
+
+    .cristina-bajo {
+        font-family: $font;
+        grid-area: cristina-bajo;
+       background-color:#a79b9a ; 
+       color: black;
+       margin-top: 45px;
+      text-align: center;
+
+      .cris-baj {
+        margin-top: 50px;
+        }
+        .img-cris-baj {
+            margin: 10px;
+        }
+    }
+}
+
+.gabriela-exilart{
+    font-family: $font;
+    grid-area: gabriela-exilart;
+    background-color:#928f9e ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    
+.gab-ex{
+    margin: 50px;
+}
+.img-gab-ex {
+    margin: 10px;
+}
+
+}
+
+
+.carlos-ruiz {
+    font-family: $font;
+    grid-area: carlos-ruiz;
+    background-color:#8f947e ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    .car-ru {
+        margin-top: 50px;
+    }
+    .img-car-ru {
+        margin: 10px;
+    }
+}
+
+.vanesa-montfort {
+    font-family: $font;
+    grid-area: vanesa-montfort;
+    background-color:#8f947e ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    .van-mont {
+        margin-top: 50px;
+    }
+    .img-van-mont {
+        margin: 10px;
+    }
+}
+
+.ver {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 0.3s ease-in-out;
+ }
+ 
+ .ver:hover {
+     font-size:23px;
+     font-style: italic;
+ }
+
+@media (max-width: 953px ) {
+    .respagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "elpoder"
+        "penelope"
+        "susurro";
+    }
+}

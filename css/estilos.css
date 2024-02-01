@@ -123,6 +123,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  margin: 20px;
   font-family: "Lato", sans-serif;
 }
 .sobremigrids .presentacion .conunpc {
@@ -172,7 +174,8 @@
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 .res-in .respres .resunpc {
   margin: 30px;
@@ -232,7 +235,8 @@
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 .au-in .aupres .aunpc {
   margin: 30px;

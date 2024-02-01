@@ -355,7 +355,7 @@
 .autores-pagina .cristina-bajo {
   font-family: "Lato", sans-serif;
   grid-area: cristina-bajo;
-  background-color: #a79b9a;
+  background-color: #a08180;
   color: black;
   margin-top: 45px;
   text-align: center;
@@ -366,49 +366,46 @@
 .autores-pagina .cristina-bajo .img-cris-baj {
   margin: 10px;
 }
-
-.gabriela-exilart {
+.autores-pagina .gabriela-exilart {
   font-family: "Lato", sans-serif;
   grid-area: gabriela-exilart;
-  background-color: #928f9e;
+  background-color: #afccd3;
   color: black;
   margin-top: 45px;
   text-align: center;
 }
-.gabriela-exilart .gab-ex {
+.autores-pagina .gabriela-exilart .gab-ex {
   margin: 50px;
 }
-.gabriela-exilart .img-gab-ex {
+.autores-pagina .gabriela-exilart .img-gab-ex {
   margin: 10px;
 }
-
-.carlos-ruiz {
+.autores-pagina .carlos-ruiz {
   font-family: "Lato", sans-serif;
   grid-area: carlos-ruiz;
-  background-color: #8f947e;
+  background-color: #77887a;
   color: black;
   margin-top: 45px;
   text-align: center;
 }
-.carlos-ruiz .car-ru {
+.autores-pagina .carlos-ruiz .car-ru {
   margin-top: 50px;
 }
-.carlos-ruiz .img-car-ru {
+.autores-pagina .carlos-ruiz .img-car-ru {
   margin: 10px;
 }
-
-.vanesa-montfort {
+.autores-pagina .vanesa-montfort {
   font-family: "Lato", sans-serif;
   grid-area: vanesa-montfort;
-  background-color: #8f947e;
+  background-color: #79a197;
   color: black;
   margin-top: 45px;
   text-align: center;
 }
-.vanesa-montfort .van-mont {
+.autores-pagina .vanesa-montfort .van-mont {
   margin-top: 50px;
 }
-.vanesa-montfort .img-van-mont {
+.autores-pagina .vanesa-montfort .img-van-mont {
   margin: 10px;
 }
 
@@ -425,10 +422,10 @@
 }
 
 @media (max-width: 953px) {
-  .respagina {
+  .autores-pagina {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "elpoder" "penelope" "susurro";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cristina-bajo" "gabriela-exilart" "carlos-ruiz" "vanesa-montfort";
   }
 }
 .pagcontacto {

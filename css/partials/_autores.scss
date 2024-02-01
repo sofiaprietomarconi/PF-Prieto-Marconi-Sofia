@@ -8,12 +8,12 @@
     "cristina-bajo gabriela-exilart"
     "carlos-ruiz vanesa-montfort";
     gap: 2rem;
-    background-color: $backcolor ;
+    background-color: $backcolor;
 
     .cristina-bajo {
         font-family: $font;
         grid-area: cristina-bajo;
-       background-color:#a08180 ; 
+       background-color:#CFCDC9 ; 
        color: black;
        margin-top: 45px;
       text-align: center;
@@ -21,55 +21,79 @@
       .cris-baj {
         margin-top: 50px;
         }
-        .img-cris-baj {
-            margin: 10px;
+        .img-cris-bajo {
+          margin:30px;
+        }
+
+        .pres-cris-baj{
+            font-family: $font;
+            color:black;
+            margin:20px;
         }
     }
     .gabriela-exilart{
         font-family: $font;
         grid-area: gabriela-exilart;
-        background-color:#afccd3 ; 
+        background-color:#BFC5BF; 
         color: black;
         margin-top: 45px;
         text-align: center;
         
     .gab-ex{
-        margin: 50px;
+        margin-top: 50px;
     }
     .img-gab-ex {
-        margin: 10px;
+        margin: 30px;
     }
-    
+
+    .pres-gab-ex{
+        font-family: $font;
+        color:black;
+        margin:20px;
     }
-    
-    
+    }
+
     .carlos-ruiz {
         font-family: $font;
         grid-area: carlos-ruiz;
-        background-color:#77887a ; 
+        background-color:#BFC5BF ; 
         color: black;
         margin-top: 45px;
         text-align: center;
+        margin-bottom: 100px;
         .car-ru {
             margin-top: 50px;
         }
         .img-car-ru {
-            margin: 10px;
+            margin: 30px;
+        }
+
+        .pres-car-ru{
+            font-family: $font;
+            color:black;
+            margin:20px;
         }
     }
     
     .vanesa-montfort {
         font-family: $font;
         grid-area: vanesa-montfort;
-        background-color:#79a197 ; 
+        background-color:#CFCDC9 ; 
         color: black;
         margin-top: 45px;
         text-align: center;
+        margin-bottom: 170px;
         .van-mont {
             margin-top: 50px;
         }
         .img-van-mont {
-            margin: 10px;
+            margin: 30px;
+        }
+
+        .pres-van-mont{
+            font-family: $font;
+            color:black;
+            margin:20px;
         }
     }
     
@@ -78,6 +102,7 @@
 .ver {
     color: black;
     text-decoration: none;
+    font-style: italic;
     font-size: 18px;
     transition: font-size 0.3s ease-in-out;
  }

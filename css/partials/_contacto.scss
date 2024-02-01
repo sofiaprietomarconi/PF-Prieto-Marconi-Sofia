@@ -1,7 +1,6 @@
 
 .pagcontacto {
     display:grid;
-    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -30,8 +29,6 @@
         .whatsappcontacto:hover{
             font-size: 18px;
         }
-
-     
         }
     
     .ubicontacto {
@@ -41,9 +38,6 @@
         grid-area: ubicontacto;
        margin:10px;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         .ubicacion{
             text-decoration: none;
             color: black;

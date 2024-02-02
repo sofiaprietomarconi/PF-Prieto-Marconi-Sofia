@@ -3,13 +3,14 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "elpoder penelope susurro";
+    "elpoder penelope susurro"
+    "reinadescalza oficio-del-mal blanco-letal";
     gap: 2rem;
     background-color: $backcolor ;
 
-    .elpoder {
+.elpoder {
         font-family: $font;
         grid-area: elpoder;
        background-color:#a79b9a ; 
@@ -26,7 +27,7 @@
 
     }
 
-}
+
 
 .penelope {
     font-family: $font;
@@ -60,6 +61,60 @@
     .imgsusurro {
         margin: 10px;
     }
+
+}
+
+.reinadescalza {
+    font-family: $font;
+    grid-area: reinadescalza;
+    background-color:#a0c1ce ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+    .rein-descal {
+        margin-top: 50px;
+    }
+    .img-rein-descal {
+        margin: 10px;
+    }
+
+}
+
+.oficio-del-mal {
+    font-family: $font;
+    grid-area: oficio-del-mal;
+    background-color:#ccbaa5 ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+.of-mal{
+    margin: 50px;
+}
+.img-of-mal {
+    margin: 10px;
+}
+
+}
+
+
+.blanco-letal {
+    font-family: $font;
+    grid-area: blanco-letal;
+    background-color:#a0b9a2 ; 
+    color: black;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 100px;
+    .blan-let {
+        margin-top: 50px;
+    }
+    .img-blan-let {
+        margin: 10px;
+    }
+}
 }
 
 .ver {
@@ -81,6 +136,9 @@
         grid-template-areas: 
         "elpoder"
         "penelope"
-        "susurro";
+        "susurro"
+        "reinadescalza"
+        "oficio-del-mal"
+        "blanco-letal";
     }
 }

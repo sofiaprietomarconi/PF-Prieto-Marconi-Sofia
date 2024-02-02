@@ -275,8 +275,8 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "elpoder penelope susurro";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "elpoder penelope susurro" "reinadescalza oficio-del-mal blanco-letal";
   gap: 2rem;
   background-color: #D3E8EE;
 }
@@ -294,8 +294,7 @@
 .respagina .elpoder .imgelpoder {
   margin: 10px;
 }
-
-.penelope {
+.respagina .penelope {
   font-family: "Lato", sans-serif;
   grid-area: penelope;
   background-color: #928f9e;
@@ -303,14 +302,13 @@
   margin-top: 45px;
   text-align: center;
 }
-.penelope .penmarg {
+.respagina .penelope .penmarg {
   margin: 50px;
 }
-.penelope .imgpenelope {
+.respagina .penelope .imgpenelope {
   margin: 10px;
 }
-
-.susurro {
+.respagina .susurro {
   font-family: "Lato", sans-serif;
   grid-area: susurro;
   background-color: #8f947e;
@@ -318,10 +316,55 @@
   margin-top: 45px;
   text-align: center;
 }
-.susurro .susmarg {
+.respagina .susurro .susmarg {
   margin-top: 50px;
 }
-.susurro .imgsusurro {
+.respagina .susurro .imgsusurro {
+  margin: 10px;
+}
+.respagina .reinadescalza {
+  font-family: "Lato", sans-serif;
+  grid-area: reinadescalza;
+  background-color: #a0c1ce;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.respagina .reinadescalza .rein-descal {
+  margin-top: 50px;
+}
+.respagina .reinadescalza .img-rein-descal {
+  margin: 10px;
+}
+.respagina .oficio-del-mal {
+  font-family: "Lato", sans-serif;
+  grid-area: oficio-del-mal;
+  background-color: #ccbaa5;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.respagina .oficio-del-mal .of-mal {
+  margin: 50px;
+}
+.respagina .oficio-del-mal .img-of-mal {
+  margin: 10px;
+}
+.respagina .blanco-letal {
+  font-family: "Lato", sans-serif;
+  grid-area: blanco-letal;
+  background-color: #a0b9a2;
+  color: black;
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.respagina .blanco-letal .blan-let {
+  margin-top: 50px;
+}
+.respagina .blanco-letal .img-blan-let {
   margin: 10px;
 }
 
@@ -341,7 +384,7 @@
   .respagina {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "elpoder" "penelope" "susurro";
+    grid-template-areas: "elpoder" "penelope" "susurro" "reinadescalza" "oficio-del-mal" "blanco-letal";
   }
 }
 .autores-pagina {
@@ -474,10 +517,10 @@
   text-decoration: none;
   color: black;
   transition: font-size 0, 3s ease-in-out;
-  font-size: 15px;
+  font-size: 20px;
 }
 .pagcontacto .wpcontacto .whatsappcontacto:hover {
-  font-size: 18px;
+  font-size: 25px;
 }
 .pagcontacto .ubicontacto {
   color: black;
@@ -491,10 +534,10 @@
   text-decoration: none;
   color: black;
   transition: font-size 0, 3s ease-in-out;
-  font-size: 15px;
+  font-size: 20px;
 }
 .pagcontacto .ubicontacto .ubicacion:hover {
-  font-size: 18px;
+  font-size: 25px;
 }
 .pagcontacto .instacontacto {
   color: black;
@@ -511,10 +554,10 @@
   text-decoration: none;
   color: black;
   transition: font-size 0, 3s ease-in-out;
-  font-size: 15px;
+  font-size: 20px;
 }
 .pagcontacto .instacontacto .instagramcontacto:hover {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .footer {
